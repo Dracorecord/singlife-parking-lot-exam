@@ -1,0 +1,44 @@
+.nav{
+	padding: 3%;
+	background-color: #b2002f;
+}
+
+.content{
+	margin-top: 4%;
+}
+
+.form-input{
+	display: inline;
+}
+
+.error{
+	color: #bc1600;	
+}
+
+.entry-block{
+	border: 1px solid;
+	border-radius: 5px;
+	padding: 3%;
+}
+
+.add-block{
+	margin-top: 3%;
+	border: 1px solid;
+	border-radius: 5px;
+	padding: 2%;
+}
+
+.data-table{
+	margin:3%;
+	padding: 2%;
+	border: 1px solid;
+	border-radius: 5px;
+}
+
+.table-row{
+	margin-bottom: 1%;
+}
+
+.filters{
+	margin-bottom: 1%;
+}
