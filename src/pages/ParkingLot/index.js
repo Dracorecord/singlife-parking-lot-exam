@@ -235,25 +235,25 @@ function ParkingLot() {
     <div className="py-10">
       <div className="flex gap-2 justify-center">
         <button
-          className="bg-blue-500 text-white px-10 py-2 rounded-sm"
+          className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
           onClick={handlePark}
         >
           Park Vehicle
         </button>
         <button
-          className="bg-blue-500 text-white px-10 py-2 rounded-sm"
+          className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
           onClick={() => setUnparkModal(true)}
         >
           Unpark Vehicle
         </button>
         <button
-          className="bg-blue-500 text-white px-10 py-2 rounded-sm"
+          className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
           onClick={addEntryPoints}
         >
           Add entry point
         </button>
         <button
-          className="bg-blue-500 text-white px-10 py-2 rounded-sm"
+          className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
           onClick={() => setAddSlotModal(true)}
         >
           Add parking slot
@@ -265,7 +265,7 @@ function ParkingLot() {
           <div
             key={slot.id}
             className={`${
-              slot.isOccupied ? "bg-gray-400" : "bg-green-400"
+              slot.isOccupied ? "bg-Slate-400" : "bg-blue-400"
             } flex-1 px-4 py-4 flex justify-between rounded-sm shadow-sm cursor-pointer`}
             onClick={() => handleEditSlot(slot)}
           >
@@ -332,7 +332,7 @@ function ParkingLot() {
                   type="text"
                   name=""
                   id=""
-                  className="border border-gray-400 px-2"
+                  className="border border-gray-900 px-2"
                   value={distance[index]}
                   onChange={(e) =>
                     handleAddDistanceChange(e.target.value, index)
